@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Navbar setResult={setResult} setLoading={setLoading}/>
       {loading?<Loader/>:""}
-      <Peoples result={result} loading={loading}/>
+      <Peoples result={result} loading={loading} setResult={setResult} setLoading={setLoading}/>
     </div>
   );
 }
